@@ -1,4 +1,4 @@
-package category
+package transaction
 
 import (
 	"net/http"
@@ -29,7 +29,6 @@ func (handler *Handler) Create(context *gin.Context) {
 	}
 
 	context.JSON(http.StatusCreated, response)
-
 }
 
 func (handler *Handler) FindAll(context *gin.Context) {
